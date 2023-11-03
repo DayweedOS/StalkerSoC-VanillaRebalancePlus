@@ -275,27 +275,25 @@ visual                  = weapons\ammo\ammo_12x70_buck.ogf
 description             = enc_weapons1_ammo_ammo-12x70-buck
 $prefetch       = 64
 
-cost                     = 50
+cost                     = 80
 
 box_size        = 10
 
 inv_name        = ammo-12x70-buck
 inv_name_short  = ammo-12x70-buck_s
-inv_weight      = .45
+inv_weight      = .40
 
 inv_grid_width      = 2
 inv_grid_height     = 1
 inv_grid_x          = 13
 inv_grid_y          = 9
 
-k_dist          = 0.75;1
-k_disp          = 10;
-k_hit           = 0.4
-k_impulse       = 0.3
-k_pierce        = 0.8
-impair          = 1
-buck_shot       = 10
-tracer          = on
+k_disp          = 6.00
+k_hit           = 0.40
+k_impulse       = 0.40
+k_pierce        = 0.80
+buck_shot       = 8.00
+
 wm_size         = 0.05
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -309,7 +307,7 @@ visual                  = weapons\ammo\ammo_12x76_zhekan.ogf
 description             = enc_weapons1_ammo_ammo-12x76-zhekan
 $prefetch       = 64
 
-cost                     = 60
+cost                     = 160
 
 box_size        = 10
 
@@ -322,16 +320,13 @@ inv_grid_height     = 1
 inv_grid_x          = 11
 inv_grid_y          = 10
 
-k_dist          = 1.5
-k_disp          = 1.0
-k_hit           = 1.0
-k_impulse       = 1.5
-k_pierce        = 1
-impair          = 1.15
-buck_shot       = 1
-tracer          = on
-wm_size         = 0.05
-explosive       = on
+k_dist          = 1.50
+k_disp          = 1.00
+k_hit           = 3.00
+k_impulse       = 1.40
+k_pierce        = 1.40
+
+wm_size         = 0.10
 
 [ammo_12x76_zhekan_heli]:ammo_12x76_zhekan
 $spawn          = "weapons\ammo\ammo_12x76_zhekan_heli" ; option for Level Editor
@@ -348,7 +343,7 @@ visual                  = weapons\ammo\ammo_12x76_dart.ogf
 description             = enc_weapons1_ammo_ammo-12x76-dart
 $prefetch       = 64
 
-cost                     = 100
+cost                     = 240
 
 box_size        = 10
 
@@ -361,16 +356,13 @@ inv_grid_height     = 1
 inv_grid_x          = 13
 inv_grid_y          = 10
 
-k_dist          = 2.5
-k_disp          = 0.8
-k_hit           = 1.15
-k_impulse       = 1.3
-k_pierce        = 2.25
-impair          = 1.2
-buck_shot       = 1
-tracer          = on
-wm_size         = 0.05
-explosive       = on
+k_dist          = 2.00
+k_disp          = 0.80
+k_hit           = 2.40
+k_impulse       = 1.20
+k_pierce        = 2.00
+
+wm_size         = 0.09
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_5.45x39_fmj]:ammo_base

@@ -21,9 +21,8 @@ holder_fov_modifier     = 0.7              ; во сколько раз увеличивается eye_fo
 
 tri_state_reload            = on
 
-cost                        = 2150  ;1000
+cost                        = 2400  ;1000
 weapon_class                = shotgun
-
 
 ammo_limit                  = 60
 ammo_current                = 10
@@ -34,18 +33,18 @@ ammo_class                  = ammo_12x70_buck, ammo_12x76_zhekan, ammo_12x76_dar
 
 ;-----------------------------------------------------------------------------------
 ;базовая дисперсия
-fire_dispersion_base        = 0.5  ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
+fire_dispersion_base        = 0.80  ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 
 ;отдача
-cam_relax_speed             = 7.0   ;скорость возврата в исходное положение
-cam_dispersion              = 3.0   ;увеличения угла (в градусах) с каждым выстрелом
-cam_dispersion_inc          = 0.0   ;увеличениe cam_dispersion с каждым выстрелом
+cam_relax_speed             = 0; 7.0   ;скорость возврата в исходное положение
+cam_dispersion              = 3.6   ;увеличения угла (в градусах) с каждым выстрелом
+cam_dispersion_inc          = 0; 0.0   ;увеличениe cam_dispersion с каждым выстрелом
 cam_dispertion_frac         = 1.0
-cam_max_angle               = 12    ;максимальный угол отдачи
-cam_max_angle_horz  = 9.0   ;(degree) maximum shot horizontal degree
-cam_step_angle_horz = 1.5   ;(degree) size of step camera moved in horizontal position while shooting
+cam_max_angle               = 180    ;максимальный угол отдачи
+cam_max_angle_horz  = 60.0   ;(degree) maximum shot horizontal degree
+cam_step_angle_horz = 7.2   ;(degree) size of step camera moved in horizontal position while shooting
 
-fire_dispersion_condition_factor = 5    ;увеличение дисперсии в процентах при максимальном износе
+fire_dispersion_condition_factor = 4    ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability         = 0.005     ;вероятность осечки при максимальном износе
 misfire_condition_k         = 0.05
 condition_shot_dec          = 0.0005    ;увеличение износа при каждом выстреле
@@ -88,13 +87,13 @@ PDM_crouch_no_acc       = 1.0
 
 ; ttc
 
-hit_power                   = 0.83, 0.87, 0.90, 0.93
+hit_power                   = 0.93
 hit_impulse                 = 240
 hit_type                    = fire_wound
 
-fire_distance               = 50
-bullet_speed                = 400           ;начальная скорость пули
-rpm                         = 100 ;70            ;60 = 1 секунда
+fire_distance               = 70
+bullet_speed                = 330           ;начальная скорость пули
+rpm                         = 120 ;70            ;60 = 1 секунда
 ; end ttc
 
 hud                         = wpn_winchester1300_hud
@@ -118,8 +117,7 @@ light_var_color             = 0.05
 light_var_range             = 0.5
 light_time                  = 0.2
 
-ph_mass                     = 3
-;cost                       = 900
+ph_mass                     = 4
 
 ;addons
 scope_status                = 0
@@ -127,7 +125,7 @@ silencer_status             = 0
 grenade_launcher_status     = 0
 
 zoom_enabled                = true
-scope_zoom_factor           = 55
+scope_zoom_factor           = 75
 
 ;звуки
 snd_draw                    = weapons\generic_draw
