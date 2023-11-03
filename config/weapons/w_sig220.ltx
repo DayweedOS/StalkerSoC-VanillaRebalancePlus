@@ -18,7 +18,7 @@ holder_range_modifier   = 1.0               ; во сколько раз увеличивается eye_r
 holder_fov_modifier     = 1.0              ; во сколько раз увеличивается eye_fov
 ;-----------------------------------------------------------------------------------
 
-cost                        = 1200  ;300
+cost                        = 1200
 
 ammo_limit                  = 120
 ammo_current                = 96
@@ -53,15 +53,15 @@ kill_msg_height     = 24
 fire_dispersion_base        = 0.24  ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 
 ;отдача
-cam_relax_speed             = 7.8   ;скорость возврата в исходное положение
-cam_dispersion              = 0.6   ;увеличения угла (в градусах) с каждым выстрелом
+cam_relax_speed             = 0; 7.8   ;скорость возврата в исходное положение
+cam_dispersion              = 1.0   ;увеличения угла (в градусах) с каждым выстрелом
 cam_dispersion_inc      = 0.0   ;увеличениe cam_dispersion с каждым выстрелом
 cam_dispertion_frac     = 1.0   ;ствол будет подыматься на cam_dispersion*cam_dispertion_frac +- cam_dispersion*(1-cam_dispertion_frac)
-cam_max_angle           = 20.0  ;максимальный угол отдачи
-cam_max_angle_horz      = 5.0   ;(degree) maximum shot horizontal degree
+cam_max_angle           = 180;  20.0  ;максимальный угол отдачи
+cam_max_angle_horz      = 60;  5.0   ;(degree) maximum shot horizontal degree
 cam_step_angle_horz     = 0.4   ;(degree) size of step camera moved in horizontal position while shooting
 
-fire_dispersion_condition_factor = 5    ;увеличение дисперсии в процентах при максимальном износе
+fire_dispersion_condition_factor = 4;  5    ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability     = 0.005 ;вероятность осечки при максимальном износе
 misfire_condition_k     = 0.05
 condition_shot_dec      = 0.0003 ;увеличение износа при каждом выстреле
@@ -76,22 +76,22 @@ PDM_crouch_no_acc       = 1.0
 
 ;-----------------------------------------------------------------------------------
 ; ttc
-hit_power           = 0.4, 0.44, 0.47, 0.50
-hit_impulse         = 125
+hit_power           = 0.51
+hit_impulse         = 100
 hit_type            = fire_wound
 
-fire_distance       = 50 ;1000
-bullet_speed        = 280
-rpm                 = 270
+fire_distance       = 120 ;1000
+bullet_speed        = 260
+rpm                 = 480
 ; end ttc
 
 use_aim_bullet              = false; true       ;Поддерживается ли первая суппер пуля
 time_to_aim                 = 1.0
 
-silencer_hit_power          = 0.5
-silencer_hit_impulse        = 105
-silencer_fire_distance      = 100
-silencer_bullet_speed       = 240
+silencer_hit_power          = 0.51
+silencer_hit_impulse        = 100
+silencer_fire_distance      = 120
+silencer_bullet_speed       = 260
 
 ;-----------------------------------------------------------------------------------
 hud                         = wpn_sig220_hud
@@ -127,7 +127,6 @@ light_var_range             = 0.5
 light_time                  = 0.2
 
 ph_mass                     = 1
-;cost                       = 350
 
 ;addons
 scope_status                = 0
@@ -135,7 +134,7 @@ silencer_status             = 2
 grenade_launcher_status     = 0
 
 zoom_enabled                = true
-scope_zoom_factor           = 55
+scope_zoom_factor           = 75
 
 ;звуки
 snd_draw                    = weapons\walther_draw
