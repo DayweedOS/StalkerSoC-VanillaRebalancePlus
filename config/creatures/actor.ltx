@@ -74,8 +74,8 @@ camera_height_factor            = 0.85
 
 
 ;дисперсия стрельбы с учетом ходьбы и бега
-disp_base                   = 1.0       ;угол (в градусах) разлета пуль, когда актер стоит на месте
-disp_aim                    = 0.01
+disp_base                   = 2.0       ;угол (в градусах) разлета пуль, когда актер стоит на месте
+disp_aim                    = 0.0
 disp_vel_factor             = 2.0       ;на сколько увеличится дисперсия при скрости в 10 м/с (не обязательно при беге)
 disp_accel_factor           = 2.0   ;еще на сколько увеличится, если актер бежит (+ скорость)
 disp_crouch_factor          = -0.1  ;уменьшение если актер сидит
@@ -113,6 +113,17 @@ transparency_threshold      = 0.4               ; 0.25
 still_visible_time          = 5000              ; время, которое объект всё ещё считается видимым, даже если он уже не во фрустуме
 
 [actor_immunities_gd_novice]
+burn_immunity               = 0.25             ;коэффициенты иммунитета
+strike_immunity             = 0.25
+shock_immunity              = 0.25
+wound_immunity              = 0.25
+radiation_immunity          = 0.25
+telepatic_immunity          = 0.25
+chemical_burn_immunity      = 0.25
+explosion_immunity          = 0.25
+fire_wound_immunity         = 0.25
+
+[actor_immunities_gd_stalker]
 burn_immunity               = 0.50             ;коэффициенты иммунитета
 strike_immunity             = 0.50
 shock_immunity              = 0.50
@@ -120,29 +131,17 @@ wound_immunity              = 0.50
 radiation_immunity          = 0.50
 telepatic_immunity          = 0.50
 chemical_burn_immunity      = 0.50
-explosion_immunity          = 0.25
-fire_wound_immunity         = 0.25
-
-
-[actor_immunities_gd_stalker]
-burn_immunity               = 0.67             ;коэффициенты иммунитета
-strike_immunity             = 0.67
-shock_immunity              = 0.67
-wound_immunity              = 0.67
-radiation_immunity          = 0.67
-telepatic_immunity          = 0.67
-chemical_burn_immunity      = 0.67
 explosion_immunity          = 0.50
 fire_wound_immunity         = 0.50
 
 [actor_immunities_gd_veteran]
-burn_immunity               = 0.83             ;коэффициенты иммунитета
-strike_immunity             = 0.83
-shock_immunity              = 0.83
-wound_immunity              = 0.83
-radiation_immunity          = 0.83
-telepatic_immunity          = 0.83
-chemical_burn_immunity      = 0.83
+burn_immunity               = 0.75             ;коэффициенты иммунитета
+strike_immunity             = 0.75
+shock_immunity              = 0.75
+wound_immunity              = 0.75
+radiation_immunity          = 0.75
+telepatic_immunity          = 0.75
+chemical_burn_immunity      = 0.75
 explosion_immunity          = 0.75
 fire_wound_immunity         = 0.75
 
@@ -172,8 +171,8 @@ power_hit_part              = 0.1                   ;процент хита, уходящий на о
 max_power_leak_speed        = 0.0                   ;накопление усталости (макс граница, до которой восстанавливается сила) в секунду игрового времени
 max_walk_weight             = 999
 
-bleeding_v                  = 0.0005                ;потеря крови при номинальной ране в секунду
-wound_incarnation_v         = 0.003                 ;скорость заживления раны
+bleeding_v                  = 0.001                ;потеря крови при номинальной ране в секунду
+wound_incarnation_v         = 0.002                 ;скорость заживления раны
 min_wound_size              = 0.0256                ;минимальный размер раны, после которого она считается зажившей
 
 ;--when actor in sleep
@@ -214,10 +213,10 @@ limping_power_end    =  0.2     ;порог силы больше которого актер перестает хром
 use_limping_state    = on
 
 cant_walk_power_begin = 0.01    ;порог силы меньше которого актер не может двигаться
-cant_walk_power_end   = 0.10    ;порог силы больше которого актер сможет двигаться
+cant_walk_power_end   = 0.05    ;порог силы больше которого актер сможет двигаться
 
-cant_sprint_power_begin =   0.20    ;порог силы меньше которого актер не может бежать в спринте
-cant_sprint_power_end   =   0.30    ;порог силы больше которого актер сможет бежать в спринте
+cant_sprint_power_begin =   0.10    ;порог силы меньше которого актер не может бежать в спринте
+cant_sprint_power_end   =   0.20    ;порог силы больше которого актер сможет бежать в спринте
 
 can_sleep_callback          = dream.can_sleep_callback
 sleep_video_name_callback   = dream.sleep_video_name_callback
@@ -235,47 +234,47 @@ bip01_spine1                = 1.0, 0, 1.0
 bip01_spine2                = 1.0, 0, 1.0
 bip01_neck                  = 1.0, 0, 1.0
 bip01_head                  = 1.0, 0, 1.0
-eyelid_1                    = 0.0, 0, 0.0
-eye_left                    = 0.0, 0, 0.0
-eye_right                   = 0.0, 0, 0.0
-jaw_1                       = 0.0, 0, 0.0
+eyelid_1                    = 1.0, 0, 1.0
+eye_left                    = 1.0, 0, 1.0
+eye_right                   = 1.0, 0, 1.0
+jaw_1                       = 1.0, 0, 1.0
 
 bip01_l_clavicle            = 1.0, 4, 1.0
 bip01_l_upperarm            = 1.0, 4, 1.0
 bip01_l_forearm             = 1.0, 4, 1.0
 bip01_l_hand                = 1.0, 4, 1.0
-bip01_l_finger0             = 0.0, 4, 0.0
-bip01_l_finger01            = 0.0, 4, 0.0
-bip01_l_finger02            = 0.0, 4, 0.0
-bip01_l_finger1             = 0.0, 4, 0.0
-bip01_l_finger11            = 0.0, 4, 0.0
-bip01_l_finger12            = 0.0, 4, 0.0
-bip01_l_finger2             = 0.0, 4, 0.0
-bip01_l_finger21            = 0.0, 4, 0.0
-bip01_l_finger22            = 0.0, 4, 0.0
+bip01_l_finger0             = 1.0, 4, 1.0
+bip01_l_finger01            = 1.0, 4, 1.0
+bip01_l_finger02            = 1.0, 4, 1.0
+bip01_l_finger1             = 1.0, 4, 1.0
+bip01_l_finger11            = 1.0, 4, 1.0
+bip01_l_finger12            = 1.0, 4, 1.0
+bip01_l_finger2             = 1.0, 4, 1.0
+bip01_l_finger21            = 1.0, 4, 1.0
+bip01_l_finger22            = 1.0, 4, 1.0
 
 bip01_r_clavicle            = 1.0, 2, 1.0
 bip01_r_upperarm            = 1.0, 2, 1.0
 bip01_r_forearm             = 1.0, 2, 1.0
 bip01_r_hand                = 1.0, 2, 1.0
-bip01_r_finger0             = 0.0, 2, 0.0
-bip01_r_finger01            = 0.0, 2, 0.0
-bip01_r_finger02            = 0.0, 2, 0.0
-bip01_r_finger1             = 0.0, 2, 0.0
-bip01_r_finger11            = 0.0, 2, 0.0
-bip01_r_finger12            = 0.0, 2, 0.0
-bip01_r_finger2             = 0.0, 2, 0.0
-bip01_r_finger21            = 0.0, 2, 0.0
-bip01_r_finger22            = 0.0, 2, 0.0
+bip01_r_finger0             = 1.0, 2, 1.0
+bip01_r_finger01            = 1.0, 2, 1.0
+bip01_r_finger02            = 1.0, 2, 1.0
+bip01_r_finger1             = 1.0, 2, 1.0
+bip01_r_finger11            = 1.0, 2, 1.0
+bip01_r_finger12            = 1.0, 2, 1.0
+bip01_r_finger2             = 1.0, 2, 1.0
+bip01_r_finger21            = 1.0, 2, 1.0
+bip01_r_finger22            = 1.0, 2, 1.0
 
 bip01_l_thigh               = 1.0, 8, 1.0
 bip01_l_calf                = 1.0, 8, 1.0
 bip01_l_foot                = 1.0, 8, 1.0
-bip01_l_toe0                = 0.0, 8, 0.0
+bip01_l_toe0                = 1.0, 8, 1.0
 bip01_r_thigh               = 1.0, 6, 1.0
 bip01_r_calf                = 1.0, 6, 1.0
 bip01_r_foot                = 1.0, 6, 1.0
-bip01_r_toe0                = 0.0, 6, 0.0
+bip01_r_toe0                = 1.0, 6, 1.0
 
 [actor_animation]
 ;углы  дворота ног актера во время стрейфов (в градусах)
