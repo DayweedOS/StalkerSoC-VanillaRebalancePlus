@@ -22,7 +22,7 @@ holder_fov_modifier     = 0.7              ; во сколько раз увеличивается eye_fo
 
 weapon_class            = assault_rifle
 
-cost                    = 1800  ;2300
+cost                    = 1800
 
 ammo_limit              = 210
 ammo_current            = 30
@@ -54,17 +54,17 @@ animation_slot          = 2     ; type of the animation that will be used
 
 ;-----------------------------------------------------------------------------------
 ;базовая дисперсия
-fire_dispersion_base        = 0.24;0.33     ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
+fire_dispersion_base        = 0.24     ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 control_inertion_factor     = 1.07f
 
 ;отдача
-cam_relax_speed             = 0;  6.5;0.2   ;скорость возврата в исходное положение
+cam_relax_speed             = 0.0   ;скорость возврата в исходное положение
 cam_dispersion              = 0.8   ;увеличения угла (в градусах) с каждым выстрелом
 cam_dispersion_inc      = 0.01  ;увеличениe cam_dispersion с каждым выстрелом
 cam_dispertion_frac     = 1.0   ;ствол будет подыматься на cam_dispersion*cam_dispertion_frac +- cam_dispersion*(1-cam_dispertion_frac)
 cam_max_angle           = 180.0   ;максимальный угол отдачи
 cam_max_angle_horz      = 60.0   ;(degree) maximum shot horizontal degree
-cam_step_angle_horz     = 0.6;0.3   ;(degree) size of step camera moved in horizontal position while shooting
+cam_step_angle_horz     = 0.6   ;(degree) size of step camera moved in horizontal position while shooting
 
 fire_dispersion_condition_factor = 4    ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability         = 0.003 ;вероятность осечки при максимальном износе
@@ -96,12 +96,12 @@ hit_power           = 0.45
 hit_impulse         = 80
 hit_type            = fire_wound
 
-fire_distance           = 320 ;1000
-bullet_speed            = 450 ;300 ;400 ;начальная скорость пули
+fire_distance           = 320
+bullet_speed            = 450 ;начальная скорость пули
 rpm                     = 800
 ; end ttc
 
-use_aim_bullet              = false; true       ;Поддерживается ли первая суппер пуля
+use_aim_bullet              = false      ;Поддерживается ли первая суппер пуля
 time_to_aim                 = 1.0
 
 silencer_hit_power          = 0.45

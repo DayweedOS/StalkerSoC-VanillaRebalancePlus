@@ -21,7 +21,7 @@ holder_fov_modifier     = 0.7              ; во сколько раз увеличивается eye_fo
 
 tri_state_reload            = on
 
-cost                        = 3200  ;1000
+cost                        = 3200
 weapon_class                = shotgun
 
 
@@ -34,13 +34,13 @@ ammo_class                  = ammo_12x70_buck, ammo_12x76_zhekan, ammo_12x76_dar
 
 ;-----------------------------------------------------------------------------------
 ;базовая дисперсия
-fire_dispersion_base        = 0.70   ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
+fire_dispersion_base        = 0.45   ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 control_inertion_factor     = 1.2f
 
 ;отдача
-cam_relax_speed             = 0; 8.0   ;скорость возврата в исходное положение
+cam_relax_speed             = 10.0   ;скорость возврата в исходное положение
 cam_dispersion              = 3.2   ;увеличения угла (в градусах) с каждым выстрелом
-cam_dispersion_inc      = 0; 0.5   ;увеличениe cam_dispersion с каждым выстрелом
+cam_dispersion_inc      = 0.0   ;увеличениe cam_dispersion с каждым выстрелом
 cam_dispertion_frac     = 1.0   ;ствол будет подыматься на cam_dispersion*cam_dispertion_frac +- cam_dispersion*(1-cam_dispertion_frac)
 cam_max_angle           = 180.0  ;максимальный угол отдачи
 cam_max_angle_horz      = 60.0  ;(degree) maximum shot horizontal degree
