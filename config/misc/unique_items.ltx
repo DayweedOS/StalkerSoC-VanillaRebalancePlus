@@ -108,7 +108,7 @@ $spawn                          = "weapons\uniq\wpn_ak74_m1"
 description                     = enc_weapons1_wpn-ak74_m1
 inv_name                        = wpn-ak74_m1
 inv_name_short                  = wpn-ak74_m1
-rpm                             = 850
+rpm                             = 800
 condition_shot_dec              = 0.0001
 cam_dispersion                  = 0.05
 cam_dispersion_inc              = 0.1
@@ -137,6 +137,13 @@ ammo_mag_size                   = 15
 condition_shot_dec              = 0.0001
 inv_grid_x                      = 10
 inv_grid_y                      = 21
+
+fire_dispersion_base            = 0.42
+hit_power                       = 0.39
+hit_impulse                     = 65
+fire_distance                   = 140
+bullet_speed                    = 340
+rpm                             = 480
 
 [wpn_ak74u_m1]:wpn_ak74u    ;АК-74у спецназ
 $spawn                          = "weapons\uniq\wpn_ak74u_m1"
@@ -167,6 +174,13 @@ condition_shot_dec              = 0.00003
 inv_grid_x                      = 5
 inv_grid_y                      = 33
 
+fire_dispersion_base            = 0.30
+hit_power                       = 0.42
+hit_impulse                     = 70
+fire_distance                   = 240
+bullet_speed                    = 390
+rpm                             = 600
+
 [wpn_groza_m1]:wpn_groza    ;Гроза генерала Воронина
 $spawn                          = "weapons\uniq\wpn_groza_m1"
 description                     = enc_weapons1_wpn-groza_m1
@@ -182,23 +196,32 @@ $spawn                          = "weapons\uniq\wpn_spas12_m1"
 description                     = enc_weapons1_wpn-spas12_m1
 inv_name                        = wpn-spas12_m1
 inv_name_short                  = wpn-spas12_m1
-fire_dispersion_base            = 0.25
 condition_shot_dec              = 0.00015
 inv_grid_x                      = 0
 inv_grid_y                      = 34
+
+fire_dispersion_base            = 0.30
+hit_power                       = 0.99
+hit_impulse                     = 270
+fire_distance                   = 90
+bullet_speed                    = 390
+rpm                             = 270
 
 [wpn_winchester_m1]:wpn_wincheaster1300 ;Боевой винчестер
 $spawn                          = "weapons\uniq\wpn_winchester_m1"
 description                     = enc_weapons1_wpn-winchester_m1
 inv_name                        = wpn-winchester_m1
 inv_name_short                  = wpn-winchester_m1
-hit_power                       = 0.99
-fire_distance                   = 90
-bullet_speed                    = 390
-ammo_mag_size                   = 5
 condition_shot_dec              = 0.00015
 inv_grid_x                      = 0
 inv_grid_y                      = 35
+
+fire_dispersion_base            = 0.45
+hit_power                       = 0.99
+hit_impulse                     = 270
+fire_distance                   = 90
+bullet_speed                    = 390
+rpm                             = 180
 
 [wpn_l85_m1]:wpn_l85    ;Сбалансированная L85
 $spawn                          = "weapons\uniq\wpn_l85_m1"
@@ -263,15 +286,16 @@ description                     = enc_weapons1_wpn-eagle_m1
 inv_name                        = wpn-eagle_m1
 inv_name_short                  = wpn-eagle_m1
 ammo_class                      = ammo_9x39_sp5, ammo_9x39_ap, ammo_9x39_pab9
-hit_power                       = 0.84
-hit_impulse                     = 140
-hit_type                        = fire_wound
-fire_distance                   = 320
-bullet_speed                    = 240
-rpm                             = 360
 condition_shot_dec              = 0.0003
 inv_grid_x                      = 9
 inv_grid_y                      = 22
+
+fire_dispersion_base            = 0.16
+hit_power                       = 0.75
+hit_impulse                     = 140
+fire_distance                   = 320
+bullet_speed                    = 240
+rpm                             = 360
 
 [wpn_colt_m1]:wpn_colt1911  ;Модифицированный кольт
 $spawn                          = "weapons\uniq\wpn_colt_m1"
@@ -282,6 +306,13 @@ silencer_status                 = 1
 condition_shot_dec              = 0.00033
 inv_grid_x                      = 18
 inv_grid_y                      = 20
+
+fire_dispersion_base            = 0.18
+hit_power                       = 0.63
+hit_impulse                     = 105
+fire_distance                   = 180
+bullet_speed                    = 330
+rpm                             = 480
 
 smoke_particles                 = weapons\generic_shoot_00
 flame_particles                 =
@@ -307,11 +338,17 @@ description                     = enc_weapons1_wpn-mp5_m2
 inv_name                        = wpn-mp5_m2
 inv_name_short                  = wpn-mp5_m2
 silencer_status                 = 1
-fire_dispersion_base            = 0.15
 condition_shot_dec              = 0.00003
 inv_grid_x                      = 5
 inv_grid_y                      = 22
 inv_grid_width                  = 4
+
+fire_dispersion_base            = 0.18
+hit_power                       = 0.48
+hit_impulse                     = 85
+fire_distance                   = 360
+bullet_speed                    = 480
+rpm                             = 690
 
 smoke_particles                 = weapons\generic_shoot_00
 flame_particles                 =
@@ -347,8 +384,6 @@ light_disabled                  = true
 
 snd_shoot                   = weapons\w_ak74_shot1
 
-
-
 [wpn_sig_m2]:wpn_sig550 ;SiG снайперский
 $spawn                          = "weapons\uniq\wpn_sig_m2"
 description                     = enc_weapons1_wpn-sig_m2
@@ -380,6 +415,13 @@ ammo_class                      = ammo_9x18_fmj, ammo_9x18_pmm
 condition_shot_dec              = 0.00015
 inv_grid_x                      = 11
 inv_grid_y                      = 21
+
+fire_dispersion_base            = 0.36
+hit_power                       = 0.42
+hit_impulse                     = 75
+fire_distance                   = 160
+bullet_speed                    = 360
+rpm                             = 480
 
 
 ;-----------Arena-----------
