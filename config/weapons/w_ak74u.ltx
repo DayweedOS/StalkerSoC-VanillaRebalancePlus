@@ -20,7 +20,7 @@ holder_fov_modifier     = 0.7              ; во сколько раз увеличивается eye_fo
 ;-----------------------------------------------------------------------------------
 
 
-cost                    = 1000              ; the price of the item
+cost                    = 1400              ; the price of the item
 weapon_class            = assault_rifle     ; the type of the box that will be used in buy-menu in multiplayer mode
 
 ammo_limit              = 210               ; obsolete
@@ -66,19 +66,19 @@ kill_msg_height     = 30
 ;
 ;-----------------------------------------------------------------------------------
 ;params of weapon recoil
-fire_dispersion_base            = 0.35      ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
+fire_dispersion_base            = 0.36      ;угол (в градусах) базовой дисперсии оружия (оружия зажатого в тисках)
 control_inertion_factor         = 1.09f
 
 ;отдача
-cam_relax_speed                 = 6;0.3     ;скорость возврата в исходное положение
-cam_dispersion                  = 0.3       ;увеличения угла (в градусах) с каждым выстрелом
-cam_dispersion_inc          = 0.20;0.15     ;увеличениe cam_dispersion с каждым выстрелом
-cam_dispertion_frac         = 0.9       ;ствол будет подыматься на cam_dispersion*cam_dispertion_frac +- cam_dispersion*(1-cam_dispertion_frac)
-cam_max_angle               = 9.0       ;максимальный угол отдачи
-cam_max_angle_horz          = 30.0      ;(degree) maximum shot horizontal degree
-cam_step_angle_horz         = 1.25;1.1      ;(degree) size of step camera moved in horizontal position while shooting
+cam_relax_speed                 = 18.0
+cam_dispersion                  = 2.0       ;увеличения угла (в градусах) с каждым выстрелом
+cam_dispersion_inc          = 0.0     ;увеличениe cam_dispersion с каждым выстрелом
+cam_dispertion_frac         = 1.0       ;ствол будет подыматься на cam_dispersion*cam_dispertion_frac +- cam_dispersion*(1-cam_dispertion_frac)
+cam_max_angle               = 180.0       ;максимальный угол отдачи
+cam_max_angle_horz          = 60.0      ;(degree) maximum shot horizontal degree
+cam_step_angle_horz         = 20.0      ;(degree) size of step camera moved in horizontal position while shooting
 
-fire_dispersion_condition_factor    = 5     ;увеличение дисперсии в процентах при максимальном износе
+fire_dispersion_condition_factor    = 4     ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability         = 0.003 ;вероятность осечки при максимальном износе
 misfire_condition_k         = 0.05
 condition_shot_dec          = 0.0001    ;увеличение износа при каждом выстреле
@@ -101,20 +101,20 @@ PDM_crouch              = 1.0
 PDM_crouch_no_acc           = 1.0
 
 ; ttc
-hit_power               = 0.32, 0.36, 0.39, 0.42        ;size of damage by bullet
-hit_impulse             = 140       ;size of physic impulse by bullet
+hit_power               = 0.39        ;size of damage by bullet
+hit_impulse             = 75       ;size of physic impulse by bullet
 hit_type                = fire_wound    ;[] type of the wound
 
-fire_distance                   = 200 ;1000     ;maximum fire distance that bullet can fly
-bullet_speed                = 790       ;starting bullet speed
-rpm                             = 600;735       ;max round per minute
+fire_distance                   = 600 ;1000     ;maximum fire distance that bullet can fly
+bullet_speed                    = 600       ;starting bullet speed
+rpm                             = 650 ;735       ;max round per minute
 
 use_aim_bullet              = false      ;Поддерживается ли первая суппер пуля
 time_to_aim                 = 1.0
 
-silencer_hit_power              = 0.32
-silencer_hit_impulse            = 120
-silencer_fire_distance          = 250
+silencer_hit_power              = 0.39
+silencer_hit_impulse            = 75
+silencer_fire_distance          = 600
 silencer_bullet_speed           = 600
 
 hud                         = wpn_ak74u_hud             ; name of the section of the hud

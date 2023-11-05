@@ -90,6 +90,7 @@ k_disp          = 1
 impair          = 1
 wm_size         = 0.01
 tracer          = on
+explosive       = off
 
 [ammo_9x18_fmj]:ammo_base
 GroupControlSection = spawn_group
@@ -375,9 +376,9 @@ visual                  = weapons\ammo\ammo_545x39_fmj.ogf
 description             = enc_weapons1_ammo_ammo-5.45x39-fmj
 $prefetch       = 64
 
-cost                     = 200  ;150
+cost            = 240
 
-box_size        = 30    ;60
+box_size        = 30
 
 inv_name        = ammo-5.45x39-fmj
 inv_name_short  = ammo-5.45x39-fmj_s
@@ -401,9 +402,9 @@ visual                  = weapons\ammo\ammo_545x39_ap.ogf
 description             = enc_weapons1_ammo_ammo-5.45x39-ap
 $prefetch       = 64
 
-cost                     = 250
+cost            = 480
 
-box_size        = 30    ;60
+box_size        = 30
 
 inv_name        = ammo-5.45x39-ap
 inv_name_short  = ammo-5.45x39-ap_s
@@ -414,14 +415,12 @@ inv_grid_height     = 1
 inv_grid_x          = 12
 inv_grid_y          = 11
 
-k_dist          = 1
-k_disp          = 2.5;3
-k_hit           = 1
-k_impulse       = 0.95
-k_pierce        = 1.75
-impair          = 1.02
-buck_shot       = 1
-tracer          = on
+k_dist          = 1.20
+k_disp          = 0.90
+k_hit           = 1.40
+k_impulse       = 1.10
+k_pierce        = 1.80
+
 wm_size         = 0.05
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
