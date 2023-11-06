@@ -69,17 +69,17 @@ kill_msg_height     = 32
 ;-----------------------------------------------------------------------------------
 ;params of weapon recoil
 dispersion_start        = 2
-fire_dispersion_base            = 0.18 ;0.19     ;угол (в градусах) базовой дисперсии оружи€ (оружи€ зажатого в тисках)
+fire_dispersion_base            = 0.20 ;0.19     ;угол (в градусах) базовой дисперсии оружи€ (оружи€ зажатого в тисках)
 control_inertion_factor         = 1.3f
 
 ;отдача
 cam_relax_speed                 = 18.0
-cam_dispersion                  = 0.8     ;увеличени€ угла (в градусах) с каждым выстрелом
-cam_dispersion_inc          = 0.0      ;увеличениe cam_dispersion с каждым выстрелом
-cam_dispertion_frac         = 1.0       ;ствол будет подыматьс€ на cam_dispersion*cam_dispertion_frac +- cam_dispersion*(1-cam_dispertion_frac)
-cam_max_angle               = 180.0           ;максимальный угол отдачи
-cam_max_angle_horz          = 60.0      ;(degree) maximum shot horizontal degree
-cam_step_angle_horz         = 8.0       ;(degree) size of step camera moved in horizontal position while shooting
+cam_dispersion                  = 0.8
+cam_dispersion_inc              = 0.0
+cam_dispertion_frac             = 1.0
+cam_max_angle                   = 180.0
+cam_max_angle_horz              = 60.0
+cam_step_angle_horz             = 8.0
 
 fire_dispersion_condition_factor    = 4         ;увеличение дисперсии в процентах при максимальном износе
 misfire_probability             = 0.0050    ;веро€тность осечки при максимальном износе
@@ -102,22 +102,22 @@ PDM_crouch              = 1.0
 PDM_crouch_no_acc           = 1.0
 
 ; ttc
-hit_power               = 0.45    ; size of damage by bullet
-hit_impulse             = 85       ; size of physic impulse by bullet
-hit_type                    = fire_wound                ; [] type of the wound
+hit_power               = 0.48         ; size of damage by bullet
+hit_impulse             = 85           ; size of physic impulse by bullet
+hit_type                = fire_wound   ; [] type of the wound
 
-fire_distance                   = 900                      ; maximum fire distance that bullet can fly
-bullet_speed                    = 900                       ; starting bullet speed
-rpm                             = 600
+fire_distance           = 690          ; maximum fire distance that bullet can fly
+bullet_speed            = 690          ; starting bullet speed
+rpm                     = 600
 
-use_aim_bullet              = false      ;ѕоддерживаетс€ ли перва€ суппер пул€
-time_to_aim                 = 1.0
+use_aim_bullet          = false        ;ѕоддерживаетс€ ли перва€ суппер пул€
+time_to_aim             = 1.0
 
 
-silencer_hit_power              = 0.45
-silencer_hit_impulse            = 85
-silencer_fire_distance          = 900
-silencer_bullet_speed           = 900
+silencer_hit_power      = 0.45
+silencer_hit_impulse    = 85
+silencer_fire_distance  = 690
+silencer_bullet_speed   = 690
 
 hud                         = wpn_abakan_hud                ; name of the section of the hud
 
