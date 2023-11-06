@@ -8,14 +8,6 @@ function normalize(val)
 	return val
 end
 
-function GetType(ltx, section)
-    if ltx:line_exist(section, "ef_weapon_type") then
-        return ltx:r_float(section, "ef_weapon_type")
-    else
-        return 0
-    end
-end
-
 function GetRPM(section)
 	local ltx = system_ini()
 
@@ -44,16 +36,8 @@ function GetAccuracy(section)
     local ltx = system_ini()
 
     local fire_dispersion_base = ltx:r_float(section, "fire_dispersion_base")
-    local dispersion = fire_dispersion_base * 100
-    local type = GetType(ltx, section)
 
-    if type == 5 then
-        return normalize(100 - dispersion * 1.5)
-    elseif type == 7 then
-        return normalize(100 - dispersion * 2.0)
-    else
-        return normalize(100 - dispersion)
-    end
+    return normalize(100 - fire_dispersion_base * 100)
 end
 
 function GetHandling(section)
