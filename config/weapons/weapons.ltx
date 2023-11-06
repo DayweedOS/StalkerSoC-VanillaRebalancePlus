@@ -108,7 +108,7 @@ box_size        = 20    ;50
 
 inv_name        = ammo-9x18-fmj
 inv_name_short  = ammo-9x18-fmj_s
-inv_weight      = .20
+inv_weight      = .10
 
 inv_grid_width      = 1
 inv_grid_height     = 1
@@ -116,7 +116,7 @@ inv_grid_x          = 11
 inv_grid_y          = 12
 
 k_disp          = 3.00
-wm_size         = 0.07
+wm_size         = 0.06
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_9x18_pmm]:ammo_base
@@ -135,7 +135,7 @@ box_size        = 20    ;50
 
 inv_name        = ammo-9x18-pmm
 inv_name_short  = ammo-9x18-pmm_s
-inv_weight      = .25
+inv_weight      = .15
 
 inv_grid_width      = 1
 inv_grid_height     = 1
@@ -167,7 +167,7 @@ box_size        = 20    ;50
 
 inv_name        = ammo-9x19-fmj
 inv_name_short  = ammo-9x19-fmj_s
-inv_weight      = .20
+inv_weight      = .10
 
 inv_grid_width      = 1
 inv_grid_height     = 1
@@ -175,7 +175,7 @@ inv_grid_x          = 15
 inv_grid_y          = 12
 
 k_disp          = 3.00
-wm_size         = 0.07
+wm_size         = 0.06
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_9x19_pbp]:ammo_base
@@ -194,7 +194,7 @@ box_size        = 20    ;50
 
 inv_name        = ammo-9x19-pbp
 inv_name_short  = ammo-9x19-pbp_s
-inv_weight      = .25
+inv_weight      = .15
 
 inv_grid_width      = 1
 inv_grid_height     = 1
@@ -207,7 +207,7 @@ k_hit           = 1.40
 k_impulse       = 1.20
 k_pierce        = 1.40
 
-wm_size         = 0.08
+wm_size         = 0.07
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_11.43x23_fmj]:ammo_base
@@ -226,7 +226,7 @@ box_size        = 20    ;50
 
 inv_name        = ammo-11.43x23-fmj
 inv_name_short  = ammo-11.43x23-fmj_s
-inv_weight      = .30
+inv_weight      = .20
 
 inv_grid_width      = 2;1
 inv_grid_height     = 1
@@ -253,7 +253,7 @@ box_size        = 20    ;50
 
 inv_name        = ammo-11.43x23-hydro
 inv_name_short  = ammo-11.43x23-hydro_s
-inv_weight      = .35
+inv_weight      = .25
 
 inv_grid_width      = 2;1
 inv_grid_height     = 1
@@ -315,7 +315,7 @@ box_size        = 10
 
 inv_name        = ammo-12x76-zhekan
 inv_name_short  = ammo-12x76-zhekan_s
-inv_weight      = .50
+inv_weight      = .45
 
 inv_grid_width      = 2
 inv_grid_height     = 1
@@ -328,7 +328,7 @@ k_hit           = 1.20
 k_impulse       = 1.00
 k_pierce        = 0.40
 
-wm_size         = 0.10
+wm_size         = 0.11
 
 [ammo_12x76_zhekan_heli]:ammo_12x76_zhekan
 $spawn          = "weapons\ammo\ammo_12x76_zhekan_heli" ; option for Level Editor
@@ -382,7 +382,7 @@ box_size        = 30
 
 inv_name        = ammo-5.45x39-fmj
 inv_name_short  = ammo-5.45x39-fmj_s
-inv_weight      = .32
+inv_weight      = .3
 
 inv_grid_width      = 2
 inv_grid_height     = 1
@@ -408,7 +408,7 @@ box_size        = 30
 
 inv_name        = ammo-5.45x39-ap
 inv_name_short  = ammo-5.45x39-ap_s
-inv_weight      = .32
+inv_weight      = .35
 
 inv_grid_width      = 2
 inv_grid_height     = 1
@@ -421,7 +421,7 @@ k_hit           = 1.40
 k_impulse       = 1.10
 k_pierce        = 1.80
 
-wm_size         = 0.05
+wm_size         = 0.06
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_5.56x45_ss190]:ammo_base
@@ -440,21 +440,13 @@ box_size        = 30    ;60
 
 inv_name        = ammo-5.56x45-ss190
 inv_name_short  = ammo-5.56x45-ss190_s
-inv_weight      = .33
+inv_weight      = .3
 
 inv_grid_width      = 2
 inv_grid_height     = 1
 inv_grid_x          = 14
 inv_grid_y          = 11
 
-k_dist          = 1
-k_disp          = 2.5;3
-k_hit           = 1
-k_impulse       = 1
-k_pierce        = 1
-impair          = 1
-buck_shot       = 1
-tracer          = on
 wm_size         = 0.05
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -468,28 +460,26 @@ visual                  = weapons\ammo\ammo_556x45_ap.ogf
 description             = enc_weapons1_ammo_ammo-5.56x45-ap
 $prefetch       = 64
 
-cost                     = 380
+cost                     = 640
 
 box_size        = 30    ;60
 
 inv_name        = ammo-5.56x45-ap
 inv_name_short  = ammo-5.56x45-ap_s
-inv_weight      = .33
+inv_weight      = .35
 
 inv_grid_width      = 2
 inv_grid_height     = 1
 inv_grid_x          = 10
 inv_grid_y          = 11
 
-k_dist          = 1
-k_disp          = 2.5;3
-k_hit           = 1
-k_impulse       = 1
-k_pierce        = 1.75
-impair          = 1.05
-buck_shot       = 1
-tracer          = on
-wm_size         = 0.05
+k_dist          = 1.20
+k_disp          = 0.90
+k_hit           = 1.40
+k_impulse       = 1.10
+k_pierce        = 1.80
+
+wm_size         = 0.06
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_9x39_pab9]:ammo_base
@@ -502,28 +492,20 @@ visual                  = weapons\ammo\ammo_9x39_pab9.ogf
 description             = enc_weapons1_ammo_ammo-9x39-pab9
 $prefetch       = 64
 
-cost                     = 340
+cost                     = 420
 
 box_size        = 30    ;60
 
 inv_name        = ammo-9x39-pab9
 inv_name_short  = ammo-9x39-pab9_s
-inv_weight      = .7
+inv_weight      = .70
 
 inv_grid_width      = 2
 inv_grid_height     = 1
 inv_grid_x          = 17
 inv_grid_y          = 10
 
-k_dist          = 1
-k_disp          = 2.5;3
-k_hit           = 1
-k_impulse       = 1.2
-k_pierce        = 1
-impair          = 0.7
-buck_shot       = 1
-tracer          = on
-wm_size         = 0.05
+wm_size         = 0.07
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_9x39_sp5]:ammo_base
@@ -536,28 +518,26 @@ visual                  = weapons\ammo\ammo_9x39_sp5.ogf
 description             = enc_weapons1_ammo_ammo-9x39-sp5
 $prefetch       = 64
 
-cost                     = 375
+cost                     = 630
 
 box_size        = 30    ;60
 
 inv_name        = ammo-9x39-sp5
 inv_name_short  = ammo-9x39-sp5_s
-inv_weight      = .7
+inv_weight      = .75
 
 inv_grid_width      = 2
 inv_grid_height     = 1
 inv_grid_x          = 18
 inv_grid_y          = 11
 
-k_dist          = 1.25
-k_disp          = 2;3
-k_hit           = 1.1
-k_impulse       = 1
-k_pierce        = 1.35
-impair          = 1.25
-buck_shot       = 1
-tracer          = on
-wm_size         = 0.05
+k_dist          = 1.60
+k_disp          = 0.70
+k_hit           = 1.20
+k_impulse       = 1.05
+k_pierce        = 1.40
+
+wm_size         = 0.08
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_9x39_ap]:ammo_base
@@ -570,28 +550,26 @@ visual                  = weapons\ammo\ammo_9x39_ap.ogf
 description             = enc_weapons1_ammo_ammo-9x39-ap
 $prefetch       = 64
 
-cost                     = 400
+cost                     = 840
 
 box_size        = 30    ;60
 
 inv_name        = ammo-9x39-ap
 inv_name_short  = ammo-9x39-ap_s
-inv_weight      = .7
+inv_weight      = .80
 
 inv_grid_width      = 2
 inv_grid_height     = 1
 inv_grid_x          = 5
 inv_grid_y          = 12
 
-k_dist          = 1
-k_disp          = 2.5;3
-k_hit           = 1.2
-k_impulse       = 0.95
-k_pierce        = 2.25;1.25
-impair          = 1.05
-buck_shot       = 1
-tracer          = on
-wm_size         = 0.05
+k_dist          = 1.20
+k_disp          = 0.90
+k_hit           = 1.40
+k_impulse       = 1.10
+k_pierce        = 2.20
+
+wm_size         = 0.09
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_7.62x54_7h1]:ammo_base
@@ -604,63 +582,21 @@ visual                  = weapons\ammo\ammo_762x54_7h1.ogf
 description             = enc_weapons1_ammo_ammo-7.62x54-7h1
 $prefetch       = 64
 
-cost                     = 900
+cost                     = 800
 
 box_size        = 10
 
 inv_name        = ammo-7.62x54-7h1
 inv_name_short  = ammo-7.62x54-7h1_s
-inv_weight      = .23
+inv_weight      = .20
 
 inv_grid_width      = 2
 inv_grid_height     = 1
 inv_grid_x          = 15
 inv_grid_y          = 9
 
-k_dist          = 1
-k_disp          = 1.5;3
-k_hit           = 1
-k_impulse       = 1
-k_pierce        = 1.25
-impair          = 1
-buck_shot       = 1
-tracer          = on
-wm_size         = 0.05
-explosive       = on
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-[ammo_7.62x54_ap]:ammo_base
-GroupControlSection = spawn_group
-discovery_dependency =
-$spawn          = "weapons\ammo\ammo_7.62x54_ap" ; option for Level Editor
-class           = AMMO
-cform                   = skeleton
-visual                  = weapons\ammo\ammo_762x54_ap.ogf
-description             = enc_weapons1_ammo_ammo-7.62x54-ap
-$prefetch       = 64
+wm_size         = 0.08
 
-cost                     = 950
-
-box_size        = 10
-
-inv_name        = ammo-7.62x54-ap
-inv_name_short  = ammo-7.62x54-ap_s
-inv_weight      = .23
-
-inv_grid_width      = 2
-inv_grid_height     = 1
-inv_grid_x          = 15
-inv_grid_y          = 10
-
-k_dist          = 1
-k_disp          = 1.5;3
-k_hit           = 1.2
-k_impulse       = 0.95
-k_pierce        = 2.25
-impair          = 1.05
-buck_shot       = 1
-tracer          = on
-wm_size         = 0.05
-explosive       = on
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_7.62x54_7h14]:ammo_base
 GroupControlSection = spawn_group
@@ -672,29 +608,58 @@ visual                  = weapons\ammo\ammo_762x54_7h14.ogf
 description             = enc_weapons1_ammo_ammo-7.62x54-7h14
 $prefetch       = 64
 
-cost                     = 1000
+cost                     = 1200
 
 box_size        = 10
 
 inv_name        = ammo-7.62x54-7h14
 inv_name_short  = ammo-7.62x54-7h14_s
-inv_weight      = .23
+inv_weight      = .25
 
 inv_grid_width      = 2
 inv_grid_height     = 1
 inv_grid_x          = 17
 inv_grid_y          = 9
 
-k_dist          = 1.25
-k_disp          = 1
-k_hit           = 1.1
-k_impulse       = 1.2
-k_pierce        = 1.75
-impair          = 1.25
-buck_shot       = 1
-tracer          = on
-wm_size         = 0.05
-explosive       = on
+k_dist          = 1.60
+k_disp          = 0.70
+k_hit           = 1.20
+k_impulse       = 1.05
+k_pierce        = 1.80
+
+wm_size         = 0.09
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[ammo_7.62x54_ap]:ammo_base
+GroupControlSection = spawn_group
+discovery_dependency =
+$spawn          = "weapons\ammo\ammo_7.62x54_ap" ; option for Level Editor
+class           = AMMO
+cform                   = skeleton
+visual                  = weapons\ammo\ammo_762x54_ap.ogf
+description             = enc_weapons1_ammo_ammo-7.62x54-ap
+$prefetch       = 64
+
+cost                     = 1600
+
+box_size        = 10
+
+inv_name        = ammo-7.62x54-ap
+inv_name_short  = ammo-7.62x54-ap_s
+inv_weight      = .30
+
+inv_grid_width      = 2
+inv_grid_height     = 1
+inv_grid_x          = 15
+inv_grid_y          = 10
+
+k_dist          = 1.20
+k_disp          = 0.90
+k_hit           = 1.40
+k_impulse       = 1.10
+k_pierce        = 2.20
+
+wm_size         = 0.09
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_gauss]:ammo_base
@@ -707,13 +672,13 @@ visual                  = weapons\ammo\ammo_gauss.ogf
 description             = enc_weapons1_ammo_ammo-gauss
 $prefetch       = 64
 
-cost            = 1000
+cost            = 2000
 
 box_size        = 10
 
 inv_name        = ammo-gauss
 inv_name_short  = ammo-gauss_s
-inv_weight      = .5
+inv_weight      = .50
 
 inv_grid_width      = 1
 inv_grid_height     = 1
@@ -783,7 +748,7 @@ box_size        = 1
 
 inv_name        = ammo-vog-25p
 inv_name_short  = ammo-vog-25p_s
-inv_weight      = .08
+inv_weight      = .10
 
 inv_grid_width      = 1
 inv_grid_height     = 1
@@ -829,7 +794,7 @@ box_size        = 1
 
 inv_name        = ammo-vog-25
 inv_name_short  = ammo-vog-25_s
-inv_weight      = .08
+inv_weight      = .10
 
 inv_grid_width      = 1
 inv_grid_height     = 1
@@ -874,7 +839,7 @@ box_size        = 1
 
 inv_name        = ammo-m209
 inv_name_short  = ammo-m209_s
-inv_weight      = .08
+inv_weight      = .10
 
 inv_grid_width      = 1
 inv_grid_height     = 1
@@ -923,7 +888,7 @@ box_size        = 20    ;50
 
 inv_name        = "9x18 PBP"
 inv_name_short      = "JSP-AP"
-inv_weight      = .25
+inv_weight      = .15
 
 inv_grid_width      = 1
 inv_grid_height     = 1
@@ -955,7 +920,7 @@ box_size        = 30    ;60
 
 inv_name        = "5.7x28 FMJ"
 inv_name_short  = "5.7x28 FMJ"
-inv_weight      = .25
+inv_weight      = .10
 
 inv_grid_width      = 2
 inv_grid_height     = 1
@@ -981,7 +946,7 @@ box_size        = 30    ;60
 
 inv_name        = "5.7x28 AP"
 inv_name_short  = "5.7x28 AP"
-inv_weight      = .25
+inv_weight      = .15
 
 inv_grid_width      = 2
 inv_grid_height     = 1
@@ -1007,7 +972,7 @@ cform                    = skeleton
 class                    = G_FAKE
 $prefetch       = 32
 
-inv_weight              = .08
+inv_weight              = .10
 
 cost                = 160
 
@@ -1084,7 +1049,7 @@ visual                  = weapons\ammo\ammo_vog-25p.ogf
 cform                    = skeleton
 class                    = G_FAKE
 
-inv_weight              = .08
+inv_weight              = .10
 
 cost                = 240
 
@@ -1163,7 +1128,7 @@ visual                  = weapons\ammo\ammo_m209.ogf
 cform                    = skeleton
 class                    = G_FAKE
 
-inv_weight              = .08
+inv_weight              = .10
 
 cost                = 200
 
